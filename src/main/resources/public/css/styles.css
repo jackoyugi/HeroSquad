@@ -124,7 +124,7 @@ nav>ul li{
   height: 60vh;
   overflow: hidden;
   padding-right: 1px;
-  background: url('/img/');
+  background: url('/images/hero.jpg');
   background-position: top center;
   box-shadow: 0 0 20px rgb(24, 44, 13);
   animation: load1 0.8s linear 1;
@@ -161,7 +161,7 @@ nav>ul li{
   position: absolute;
   bottom: 5%;
   left: 20%;
-  cursor: pointer;
+  cursor: zoom-in;
   font-family: 'Inconsolata', sans-serif;
   font-size: 25px;
   outline: none;
@@ -169,12 +169,12 @@ nav>ul li{
 }
 .hero-btn:hover{
   background: rgba(255,255,255,0.8);
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
   color: black;
 }
 .hero-btn::after{
   content: "";
-  display: block;
+  display: run-out;
   border:25px solid rgb(11, 68, 35);
   position: absolute;
   top: -5px;
@@ -185,9 +185,9 @@ nav>ul li{
 }
 .hero-btn:hover::after{
   border-color:rgb(209,209,209);
-  cursor: pointer;
+  cursor: zoom-in;
   left: 92%;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 @keyframes load{
   0%{right: -100vw;}
