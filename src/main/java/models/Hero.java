@@ -26,6 +26,22 @@ public class Hero {
     public String getName(){
         return this.name;
     }
+    public int getAge() {
+        return this.age;
+    }
+    public String getPower(){
+        return this.power;
+    }
+    public String getWeakness(){
+        return this.weakness;
+    }
+    public static ArrayList<Hero>getAllInstances(){
+        return instances;
+    }
+    public static void clearAllHeroes(){
+         instances.clear();
+    }
     public static void setUpNewHero1() {
     }
+
 }
