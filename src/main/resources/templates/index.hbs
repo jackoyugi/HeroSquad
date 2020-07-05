@@ -1,15 +1,14 @@
 {{#partial "content"}}
-
-    <h1>Hero list!</h1>
-
-    {{#if posts}}
-        {{#each posts }}
-            <p>Current hero:</p>
-            <p>{{ content }} <a href="/hero/{{id}}">read more...</a></p>
-        {{/each}}
-    {{else}}
-        <p>No Hero posted!</p>
-    {{/if}}
+    <div class="landing-page">
+        <div class="page-l">
+        </div>
+        <div class="page-r">
+        </div>
+        <div class="hero-img"></div>
+        <div class="hero-desc">
+            <h3>We make you a Hero</h3>
+            <a href="/hero-form"><button class="hero-btn btn">Create a hero</button> </a>
+        </div>
+    </div>
 {{/partial}}
-
 {{> layout.hbs}}
