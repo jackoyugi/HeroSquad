@@ -1,4 +1,39 @@
+
 @import url('https://fonts.googleapis.com/css?family=Tangerine|Abel|Inconsolata|Droid+Sans&display=swap');
+.landing-page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15vh;
+  min-height: 10vh;
+  background: rgb(224, 225, 255);
+  color: dark;
+  box-shadow: 0 0 10px rgba(143,188,143,0.4);
+}
+.landing-page h2{
+  z-index: 10;
+	text-align: center;
+	padding: 40px 0;
+}
+.landing-page h2 a{
+	background: green;
+	color: white;
+	border-radius: 20px;
+}
+.page-l,
+.page-r{
+  position: fixed;
+  right: 0px;
+  top: 0vh;
+  width: 50%;
+  height: 100vh;
+  background: rgb(192, 192, 192);
+  z-index: 2;
+}
+.page-l{
+  left: 0px;
+  background: rgb(192, 192, 192);
+  }
 *{
   margin: 0;
   padding: 0;
@@ -34,9 +69,6 @@ html{
   scroll-behavior: smooth;
 }
 
-/*------------------------------------
-			SCROLL BAR
----------------------------------------*/
 body::-webkit-scrollbar,
  #newMember::-webkit-scrollbar{
   width: 5px;
@@ -81,40 +113,8 @@ nav>ul li{
   color: white;
   cursor: pointer;
 }
-.landing-page{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 15vh;
-  min-height: 10vh;
-  background: rgb(224, 225, 255);
-  color: dark;
-  box-shadow: 0 0 10px rgba(143,188,143,0.4);
-}
-.landing-page h2{
-  z-index: 10;
-	text-align: center;
-	padding: 40px 0;
-}
-.landing-page h2 a{
-	background: green;
-	color: white;
-	border-radius: 20px;
-}
-.page-l,
-.page-r{
-  position: fixed;
-  right: 0px;
-  top: 0vh;
-  width: 50%;
-  height: 100vh;
-  background: rgb(192, 192, 192);
-  z-index: 2;
-}
-.page-l{
-  left: 0px;
-  background: rgb(192, 192, 192);
-}
+
+
 .hero-img{
   position: relative;
   z-index: 10;
@@ -201,9 +201,6 @@ nav>ul li{
   70%{box-shadow: 0px 0px 20px rgb(255, 255, 255)}
 }
 
-/*-----------------------------------
-            HERO STATS
------------------------------------*/
 .hero-starts{
   width: 100%;
   z-index: 4;
@@ -241,11 +238,6 @@ nav>ul li{
 	padding: 5px 30px;
 }
 
-
-
-/*-----------------------------------
-            HERO FORM
------------------------------------*/
 .form-content{
   position: relative;
   width: 50%;
@@ -316,10 +308,6 @@ nav>ul li{
 ::placeholder{
   color: rgb(124, 122, 122);
 }
-
-/*-----------------------------------
-           SUCCESS
------------------------------------*/
 .success{
   position: absolute;
   padding: 20px;
@@ -366,9 +354,6 @@ nav>ul li{
   0%{left: 0px;transform: rotate(-360deg);}
 }
 
-/*--------------------------------------
-				HEROES
----------------------------------------*/
 .heroes{
   z-index: 4;
   font-family: 'Tangerine', sans-serif;
@@ -426,31 +411,6 @@ position: absolute;
   right: -20%;
   color: white;
 }
-
-/*--------------------------------------------
-            SQUAD CONTAINER
----------------------------------------------*/
-.squad{
-  z-index: 4;
-  position: relative;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.253);
-  justify-content: space-around;
-  text-align: center;
-  flex-wrap: wrap;
-  font-family: 'Tangerine', sans-serif;
-  font-size: 0.9em;
-}
-#newMember{
-  width: 100%;
-  position: absolute;
-	overflow: auto;
-  left: -100%;
-  height: 85vh;
-  background: rgb(0, 0, 0);
-  z-index: 1000;
-  text-align: center;
-}
 #newMember>p{
   text-align: right;
   position: absolute;
@@ -491,7 +451,6 @@ position: absolute;
   outline: none;
 }
 .member-cont{
-  /* background: rgba(255, 255, 255, 0.103); */
   padding: 10px;
   border-bottom: 1px solid;
 }
@@ -508,11 +467,30 @@ position: absolute;
 	.hero-img{
 		width: 100%;
 	}
-
 	.hero-desc{
 		width: 90%;
 		margin: 0px;
 		margin-top: -50%;
 	}
-
+}
+.squad{
+  z-index: 4;
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.253);
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  font-family: 'Tangerine', sans-serif;
+  font-size: 0.9em;
+}
+#newMember{
+  width: 100%;
+  position: absolute;
+	overflow: auto;
+  left: -100%;
+  height: 85vh;
+  background: rgb(0, 0, 0);
+  z-index: 1000;
+  text-align: center;
 }
