@@ -30,8 +30,12 @@ public class App {
 
         get("/hero", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            ArrayList<Hero> hero = Hero.getAllInstances();
-            model.put("hero", hero);
+            ArrayList<Hero> heroes = Hero.getAllInstances();
+            model.put("heroes", heroes);
+//            ArrayList<Hero>members= Hero.getAllInstances();
+//            model.put("heroes", members);
+//            Squad newSquad = Squad.findBySquadId(1);
+//            model.put("allSquadMembers", newSquad.getSquadMembers());
             return new ModelAndView(model, "hero.hbs");
         }, new HandlebarsTemplateEngine());
 

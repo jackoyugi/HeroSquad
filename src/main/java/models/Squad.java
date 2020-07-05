@@ -8,7 +8,7 @@ public class Squad {
     private String squadName;
     private int squadSize;
     private String cause;
-    private ArrayList<Hero> squadMembers = new ArrayList<>();
+    private static ArrayList<Hero> squadMembers = new ArrayList<>();
     private static ArrayList<Squad> instances = new ArrayList<>();
 
    public Squad(String name, int size, String cause){
