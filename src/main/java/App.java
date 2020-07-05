@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import static spark.Spark.get;
-import static spark.Spark.staticFileLocation;
+import static spark.Spark.*;
+
 public class App {
 
     public static void main(String[] args) {
@@ -41,6 +41,33 @@ public class App {
             Hero foundHero = Hero.findById(idOfHero);
             model.put("hero", foundHero);
             return new ModelAndView(model, "more.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squad-form", (req, res) ->{
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "squad-form.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squad", (req, res) ->{
+            Map<String, Object> model = new HashMap<>();
+            ArrayList<Squad> squads = Squad.getInstances();
+            model.put("squads", squads);
+            ArrayList<Hero>members= Hero.getAllInstances();
+            model.put("heroes", members);
+            Squad newSquad = Squad.findBySquadId(1);
+            model.put("allSquadMembers", newSquad.getSquadMembers());
+            return new ModelAndView(model, "squad.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        post("/squad/new", (req, res) ->{
+            Map<String, Object> model = new HashMap<>();
+            String squadName = req.queryParams("squadName");
+            Integer size = Integer.parseInt(req.queryParams("size"));
+            String cause = req.queryParams("cause");
+            Squad newSquad = new Squad(squadName, size, cause);
+            req.session().attribute("item", squadName);
+            model.put("item", req.session().attribute("item"));
+            return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
     }
 
