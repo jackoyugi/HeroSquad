@@ -124,7 +124,7 @@ nav>ul li{
   height: 60vh;
   overflow: hidden;
   padding-right: 1px;
-  background: url('/images/hero.jpg');
+  background: url('/images/hero1.jpg');
   background-position: top center;
   box-shadow: 0 0 20px rgb(24, 44, 13);
   animation: load1 0.8s linear 1;
@@ -137,11 +137,12 @@ nav>ul li{
   position: relative;
   z-index: 10;
   left: 5px;
-  color: dark;
+  color: green;
   padding-top: 20px;
+  background: url('/images/hero.jpg');
   padding-left: 1px
   background: rgba(0, 0, 0, 0.527);
-  text-align: center;
+  text-align: bottom;
   animation: load 1s linear 1;
 }
 .hero-desc>h3{
