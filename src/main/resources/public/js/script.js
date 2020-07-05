@@ -1,6 +1,6 @@
-var start = math.floor(Math.random()*100);
-var start1 = math.floor(Math.random()*100);
-var start1 = math.floor(Math.random()*100);
+var start = Math.floor(Math.random()*100);
+var start1 = Math.floor(Math.random()*100);
+var start2 = Math.floor(Math.random()*100);
 
 function count(countTo, countContainer, parentContainer) {
     var i =0;
@@ -10,7 +10,7 @@ function count(countTo, countContainer, parentContainer) {
     $(countContainer).css("colo", "#ff5b" + i + "");
     $(parentContainer).css("border-color", "#ff5b" + i + "44");
     $(parentContainer).css("border-top-color", "transparent");
-    $(".back").css("background", "#ff5b" + i "5b");
+    $(".back").css("background", "#ff5b" + i +"5b");
     }, 50);
 }
 $(document).ready(function() {
