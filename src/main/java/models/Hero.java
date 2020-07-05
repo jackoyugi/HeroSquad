@@ -23,6 +23,10 @@ public class Hero {
         return new Hero ("ajab",30, "toxic", "visible");
     }
 
+    public static Hero findById(int id) {
+        return instances.get(id-1);
+    }
+
     public String getName(){
         return this.name;
     }
@@ -41,7 +45,14 @@ public class Hero {
     public static void clearAllHeroes(){
          instances.clear();
     }
-    public static void setUpNewHero1() {
+    public static Hero setUpNewHero1() {
+        return new Hero("exl", 35, "flavor", "last");
     }
 
+    public int getId() {
+        return id;
+    }
+    public static Hero setUpNewHero2(){
+        return new Hero("pembe", 40, "fry", "odour");
+    }
 }
