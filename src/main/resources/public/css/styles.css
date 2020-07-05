@@ -87,9 +87,9 @@ nav>ul li{
   justify-content: center;
   margin-top: 15vh;
   min-height: 10vh;
-  background: rgb(8, 22, 8);
-  color: white;
-  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+  background: rgb(224, 225, 255);
+  color: dark;
+  box-shadow: 0 0 10px rgba(143,188,143,0.4);
 }
 .landing-page h2{
   z-index: 10;
@@ -113,31 +113,33 @@ nav>ul li{
 }
 .page-l{
   left: 0px;
-  background: rgb(255, 255, 255);
+  background: rgb(192, 192, 192);
 }
 .hero-img{
   position: relative;
   z-index: 10;
-  width: 40%;
-  left: 0px;
+  width: 30%;
+  Right: 5px;
   margin-top: 5vh;
-  height: 70vh;
+  height: 60vh;
   overflow: hidden;
-  background: url('/img/arrow_1.jpg');
+  padding-right: 1px;
+  background: url('/img/');
   background-position: top center;
   box-shadow: 0 0 20px rgb(24, 44, 13);
   animation: load1 0.8s linear 1;
 }
 .hero-desc{
-  width: 40%;
+  width: 30%;
   height: 60vh;
   margin-top: 10vh;
-  margin-left: -100px;
+  margin-left: -50px;
   position: relative;
   z-index: 10;
-  left: 0px;
-  color: white;
+  left: 5px;
+  color: dark;
   padding-top: 20px;
+  padding-left: 1px
   background: rgba(0, 0, 0, 0.527);
   text-align: center;
   animation: load 1s linear 1;
@@ -264,7 +266,7 @@ nav>ul li{
   display: inline-block;
   padding: 20px;
   background: rgb(23, 43, 23);
-  color: white;
+  color: dark;
   width: 70%;
   left: 15%;
 }
@@ -277,7 +279,7 @@ nav>ul li{
 
 }
 .form>h1{
-  color: white;
+  color: dark;
   font-size: 2.3em;
 }
 .form>input[type=text],
@@ -288,9 +290,9 @@ nav>ul li{
   margin: 10px 0;
   border: none;
   border-bottom: 1px solid white;
-  color: white;
+  color: dark;
   outline: none;
-  display: block;
+  display: run-in;
   animation: formLd 1.2s linear 1;
   font-size: 1em;
 }
@@ -321,7 +323,7 @@ nav>ul li{
   position: absolute;
   padding: 20px;
   z-index: 4;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(124, 122, 122, 0.5);
   width: 70%;
   min-height: 100px;
   margin-top: 20vh;
@@ -330,12 +332,12 @@ nav>ul li{
   animation: successColor 1s linear 1;
 }
 .success h3 span{
-  color: rgb(123, 255, 0);
+  color: rgb(125, 255, 0);
 }
 @keyframes successColor{
   0%{
-    background: rgb(22, 54, 0);
-    color: rgb(22, 54, 0);
+    background: rgb(127, 255, 212);
+    color: rgb(176, 224, 230);
   }
   90%{
     background: rgb(22, 54, 0);
@@ -357,10 +359,10 @@ nav>ul li{
   animation: success1 0.7s linear 1;
 }
 @keyframes success{
-  0%{right: 100%;transform: rotate(270deg);}
+  0%{left: 100%;transform: rotate(360deg);}
 }
 @keyframes success1{
-  0%{right: 0px;transform: rotate(-270deg);}
+  0%{left: 0px;transform: rotate(-360deg);}
 }
 
 /*--------------------------------------
