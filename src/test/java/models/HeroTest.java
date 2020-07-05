@@ -72,5 +72,4 @@ public class HeroTest {
         assertEquals(2, Hero.findById(another.getId()).getId());
     }
 
-
 }

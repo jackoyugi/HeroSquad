@@ -31,7 +31,40 @@ public class Squad {
 
     }
 
+    public static ArrayList<Squad> getInstances() {
+       return instances;
+    }
+
+    public static Squad findBySquadId(int id) {
+        return instances.get(id-1);
+    }
+
     public String getName() {
        return squadName;
     }
+
+    public int getSize() {
+       return squadSize;
+    }
+
+    public String getCause() {
+       return this.cause;
+    }
+
+    public ArrayList<Hero> getSquadMembers() {
+        return squadMembers;
+    }
+
+    public void setSquadMembers(Hero hero) {
+       squadMembers.add(hero);
+    }
+
+    public void clearAllSquadMembers() {
+       instances.clear();
+    }
+    public int getSquadId(){
+       return squadId;
+    }
+
+
 }
