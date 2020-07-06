@@ -2,7 +2,7 @@
 Hake a hero
 <br>
 
-![Screenshot from 2020-07-05 20-24-42](https://user-images.githubusercontent.com/64521605/86538257-a4da6180-befd-11ea-8c12-bcd7a19a26db.png)
+![heroimage](https://user-images.githubusercontent.com/64521605/86558694-c588d280-bf62-11ea-8d6e-6dc4254f52b9.jpg)
 ### By Jack Oyugi : on 05/07/2020
 
 ### Description
