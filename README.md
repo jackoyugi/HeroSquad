@@ -1,22 +1,23 @@
 # Hero Squad
-Hake a hero
+Make a hero
 <br>
 
 ![heroimage](https://user-images.githubusercontent.com/64521605/86558694-c588d280-bf62-11ea-8d6e-6dc4254f52b9.jpg)
 ### By Jack Oyugi : on 05/07/2020
 
 ### Description
-This app allows user to, `create and Hero`and `asign a Hero to a Squad`
+This app allows users to, `create and Hero`and `asign a Hero to a Squad`
 
 
 Fork the project from https://github.com/jackoyugi/HeroSquad
-And clone the directory in your local machine directory.
-Open the project in intellij editor and run the project using gradle `java App`
+and clone the directory in your local machine.
+Open the project in intellij editor and run the project using gradle `gradle run`
 <br>
-## Behaviour Driven Development BDD
-Create a Hero
-View Hero and Squad
-Add a hero to a Squad and Members
+## Behaviour Driven Development (BDD)
+| Behaviour          |       Input       |     Output       |
+| ------------------ | ----------------  | ---------------  |
+| Give Hero's name   |      Upezi        |    Upezi         |
+| Squad cause        |      Destroyer    |    Destroyer     |
 
 
 ### Technologies Used
